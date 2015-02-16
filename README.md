@@ -11,7 +11,7 @@ Installation using [Composer](https://getcomposer.org):
 ```json
 {
     "require": {
-        "chellem/youtube-downloader": "dev-master"
+        "Elbandi/Youtube-dl-php": "dev-master"
     }
 }
 ```
