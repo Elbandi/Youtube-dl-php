@@ -61,6 +61,8 @@ class Youtubedl
                         return $this->video? $this->video:$this->video=new Video();
                     case 'format':
                         return $this->format? $this->format:$this->format=new Format();
+                    default:
+                        return $this->option? $this->option:$this->option=new $match[1]();
                 }
             } else {
                 return $this->general ? $this->general:$this->general=new General();
