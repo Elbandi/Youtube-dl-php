@@ -63,7 +63,7 @@ class Youtubedl
                         return $this->format? $this->format:$this->format=new Format();
                 }
             } else {
-                return $this->option ? $this->option:$this->option=new General();
+                return $this->general ? $this->general:$this->general=new General();
             }
         }
 
