@@ -6,6 +6,7 @@ class Verbosity extends Base
 {
     protected $consoleTitle;
     protected $dumpIntermediatePages;
+    protected $dumpJson;
     protected $getFilename;
     protected $getFormat;
     protected $getId;
@@ -219,4 +220,19 @@ class Verbosity extends Base
 
         return $this;
     }
+
+    /**
+     * Sets the value of dumpJson.
+     *
+     * @param mixed $dumpJson the dump json
+     *
+     * @return self
+     */
+    public function setDumpJson($bool=true)
+    {
+        $this->dumpJson = $bool;
+
+        return $this;
+    }
+
 }
