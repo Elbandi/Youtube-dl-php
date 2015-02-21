@@ -9,6 +9,7 @@ class Format extends Base
     protected $listFormats;
     protected $maxQuality;
     protected $preferFreeFormats;
+    protected $youtubeSkipDashManifest;
 
     public function __toString()
     {
@@ -81,6 +82,20 @@ class Format extends Base
     public function setListFormats($bool=true)
     {
         $this->listFormats = $bool;
+
+        return $this;
+    }
+
+    /**
+     * Sets the value of youtubeSkipDashManifest.
+     *
+     * @param mixed $youtubeSkipDashManifest the skip dash manifest
+     *
+     * @return self
+     */
+    public function setYoutubeSkipDashManifest($bool=true)
+    {
+        $this->youtubeSkipDashManifest = $bool;
 
         return $this;
     }
