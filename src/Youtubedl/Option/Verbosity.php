@@ -14,7 +14,7 @@ class Verbosity extends Base
     protected $getTitle;
     protected $getUrl;
     protected $newline;
-    protected $noprogress;
+    protected $noProgress;
     protected $quiet;
     protected $simulate;
     protected $skipDownload;
@@ -168,13 +168,13 @@ class Verbosity extends Base
     /**
      * Sets the value of noprogress.
      *
-     * @param mixed $noprogress the noprogress
+     * @param mixed $noProgress the noprogress
      *
      * @return self
      */
     public function setNoprogress($bool=true)
     {
-        $this->noprogress = $bool;
+        $this->noProgress = $bool;
 
         return $this;
     }
