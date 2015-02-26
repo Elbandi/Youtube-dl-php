@@ -56,7 +56,7 @@ class Youtubedl
                     case 'postprocessing':
                         return $this->postProcessing ? $this->postProcessing:$this->postProcessing=new PostProcessing();
                     case 'verbosity':
-                        return $this->verbosity ? $this->Verbosity:$this->verbosity=new Verbosity();
+                        return $this->verbosity ? $this->verbosity:$this->verbosity=new Verbosity();
                     case 'video':
                         return $this->video? $this->video:$this->video=new Video();
                     case 'format':
